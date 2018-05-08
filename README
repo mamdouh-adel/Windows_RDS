@@ -1,6 +1,24 @@
 
-Windows_RDS: Remote desktop service client
-=================================================
+Windows RDS: Run Windows Software on Linux By VM But seem like direct
+======================================================================
 
-Windows RDS
- 
+are you like me love linux but some Applications what you need run only on Windows like Photoshop and Evernote and etc.... and wine for you is impractical
+
+may be you want to try this solution 
+
+1) Install Windows On VM by VirtualBox or VMWare or any Virtualization Solution and install all your windwos Applications 
+
+2) in this Windows VM Install RemoteApp Tool 5300 from tools folder and add your Windows Applications as Remote Desktop Service
+
+3) In your linux machine install FreeRDP http://www.freerdp.com/
+
+4) you can make your windows VM run at startup and in background just google it
+
+5) Complie and run Windows_RDS and connect to Windows VM with IP Address
+
+
+==========================================================================
+
+you can add windows application with your prefered icon and start it directlly from linux 
+
+you can add windwos shared folder and run it directlly by dolphin file manager 
