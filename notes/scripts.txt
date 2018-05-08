@@ -1,0 +1,1 @@
+xfreerdp +clipboard /u:mamdouh /p:pipo300 /app:"||fakeApp" /v:Mamdouh-PC | grep --color -i "initialized POSIX" 

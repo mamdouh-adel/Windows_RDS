@@ -1,0 +1,6 @@
+delete from apps;    
+delete from sqlite_sequence where name='apps'; 
+
+
+delete from shares;    
+delete from sqlite_sequence where name='shares';

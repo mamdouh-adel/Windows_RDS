@@ -1,0 +1,31 @@
+Mac OS X Specifics:
+-------------------
+
+Using a package manager
+
+If you’re using MacPorts then just install FreeRDP port:
+
+sudo port install FreeRDP
+FreeRDP is now available as a homebrew recipe.
+
+brew tap homebrew/x11
+brew install freerdp
+sudo brew link freerdp
+Compiling from sources
+
+You’ll need cmake in order to build sourc.
+Install it if you don’t have it already then to make a universal binary build, use:
+
+cmake -D "CMAKE_OSX_ARCHITECTURES:STRING=i386;x86_64" . && make
+
+To make a 64-bit only binary:
+
+cmake -D "CMAKE_OSX_ARCHITECTURES:STRING=x86_64" . && make
+
+If you are interested in trying out multimedia redirection on a Mac, use the following steps:
+
+Install ffmpeg, using MacPorts:
+
+sudo port install ffmpeg-devel
+
+-----------------------------------------------------------------------------------------------------------

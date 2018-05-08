@@ -1,0 +1,3 @@
+
+https://github.com/FreeRDP/FreeRDP/wiki/Compilation
+

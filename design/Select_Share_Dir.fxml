@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="600.0" style="-fx-background-color: #E6F4FA;" vgap="3.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <FlowPane alignment="CENTER_LEFT" columnHalignment="CENTER" prefHeight="31.0" prefWidth="602.0" style="-fx-background-color: B0C2CB;">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </FlowPane>
+      <ScrollPane prefHeight="360.0" prefWidth="600.0">
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin>
+         <content>
+            <FlowPane hgap="20.0" prefHeight="358.0" prefWidth="598.0" vgap="20.0">
+               <children>
+                  <FlowPane alignment="CENTER_LEFT" columnHalignment="CENTER" prefHeight="45.0" prefWidth="598.0" style="-fx-background-color: #E8E6DD;">
+                     <children>
+                        <Button fx:id="up_btn" mnemonicParsing="false" text="up" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </FlowPane>
+                  <FlowPane fx:id="flow_gp" alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="80.0" prefWidth="100.0">
+                     <children>
+                        <Group fx:id="dir_grp">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@folder1.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="3.0" layoutY="50.0" text="share1" />
+                           </children>
+                        </Group>
+                     </children>
+                  </FlowPane>
+               </children>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+      <FlowPane layoutX="10.0" layoutY="370.0" prefHeight="31.0" prefWidth="602.0" style="-fx-background-color: #A2B3BB;" />
+   </children>
+</FlowPane>

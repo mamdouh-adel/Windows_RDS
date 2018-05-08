@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="600.0" style="-fx-background-color: #E6F4FA;" vgap="20.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <FlowPane prefHeight="31.0" prefWidth="602.0" style="-fx-background-color: #A2B3BB;">
+         <children>
+            <Button fx:id="back_btn" mnemonicParsing="false" text="Back" textAlignment="CENTER" textFill="#1444db">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin>
+      </FlowPane>
+      <FlowPane alignment="CENTER_LEFT" columnHalignment="CENTER" hgap="20.0" prefHeight="38.0" prefWidth="598.0" style="-fx-background-color: #dbe9ee;">
+         <children>
+            <Label text="Choose Type:" textFill="#486a9e">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="50.0" />
+               </FlowPane.margin>
+            </Label>
+            <RadioButton fx:id="app_radio" mnemonicParsing="false" text="Application" textFill="#906086">
+               <FlowPane.margin>
+                  <Insets />
+               </FlowPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="share_radio" mnemonicParsing="false" text="Share" textFill="#906086">
+               <FlowPane.margin>
+                  <Insets left="40.0" />
+               </FlowPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+         <FlowPane.margin>
+            <Insets top="20.0" />
+         </FlowPane.margin>
+      </FlowPane>
+      <FlowPane alignment="CENTER_LEFT" columnHalignment="CENTER" hgap="20.0" layoutX="12.0" layoutY="64.0" prefHeight="38.0" prefWidth="598.0" style="-fx-background-color: #dbe9ee;">
+         <children>
+            <Label text="App/Share Name:" textFill="#486a9e">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="50.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField fx:id="app_name_text" />
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER_LEFT" columnHalignment="CENTER" hgap="20.0" layoutX="12.0" layoutY="159.0" prefHeight="38.0" prefWidth="598.0" style="-fx-background-color: #dbe9ee;">
+         <children>
+            <Label text="App/Share Script:" textFill="#486a9e">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="50.0" />
+               </FlowPane.margin>
+            </Label>
+            <TextField />
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER_LEFT" columnHalignment="CENTER" hgap="20.0" layoutX="12.0" layoutY="227.0" prefHeight="38.0" prefWidth="598.0" style="-fx-background-color: #dbe9ee;">
+         <children>
+            <Label text="App/Share Icon:" textFill="#486a9e">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="50.0" />
+               </FlowPane.margin>
+            </Label>
+            <ChoiceBox fx:id="icon_chooser" prefWidth="150.0" />
+         </children>
+      </FlowPane>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="100.0" layoutX="12.0" layoutY="295.0" prefHeight="38.0" prefWidth="598.0" style="-: ;">
+         <children>
+            <Button fx:id="test_btn" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" text="Test" textFill="#bc3d32">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="save_btn" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" text="Save" textFill="#2e895f">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+         <FlowPane.margin>
+            <Insets top="19.0" />
+         </FlowPane.margin>
+      </FlowPane>
+      <FlowPane layoutX="10.0" layoutY="370.0" prefHeight="31.0" prefWidth="602.0" style="-fx-background-color: #A2B3BB;">
+         <children>
+            <Label fx:id="status_label_add" text="status" textFill="#d01e1e">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="10.0" top="5.0" />
+               </FlowPane.margin>
+            </Label>
+         </children>
+         <FlowPane.margin>
+            <Insets top="20.0" />
+         </FlowPane.margin>
+      </FlowPane>
+   </children>
+</FlowPane>

@@ -1,0 +1,42 @@
+
+
+inside FreeRDP dir:
+-------------------------
+cmake -DCMAKE_BUILD_TYPE=Debug -DWITH_SSE2=ON
+
+make
+
+----------------------------------------------------
+
+=============================================================================================================
+
+Compilation
+
+First, you’ll need to get the sources. Everything below assumes you’ll have checked out the FreeRDP sources and you’re now in the source dir:
+
+git clone git://github.com/FreeRDP/FreeRDP.git
+cd FreeRDP
+Linux Specifics
+
+Install the suggested base dependencies:
+
+debian based
+
+sudo apt-get install build-essential git-core cmake xsltproc libssl-dev libx11-dev libxext-dev libxinerama-dev \
+  libxcursor-dev libxdamage-dev libxv-dev libxkbfile-dev libasound2-dev libcups2-dev libxml2 libxml2-dev \
+  libxrandr-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libxi-dev libgstreamer-plugins-base1.0-dev
+Building 1.0.1 or master requires:
+
+sudo apt-get install libavutil-dev libavcodec-dev
+
+rhel based
+
+sudo yum install gcc cmake openssl-devel libX11-devel libXext-devel libXinerama-devel libXcursor-devel \
+  libXi-devel libXdamage-devel libXv-devel libxkbfile-devel alsa-lib-devel cups-devel ffmpeg-devel glib2-devel
+Optionally, you can install the following dependencies:
+
+debian based
+
+sudo apt-get install libcunit1-dev libdirectfb-dev xmlto doxygen libxtst-dev
+
+=============================================================================================================

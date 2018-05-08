@@ -1,0 +1,10 @@
+inside FreeRDP dir:
+--------------------
+
+Uninstall:
+
+To uninstall by deleting all created files run:
+
+sudo xargs rm < install_manifest.txt
+
+--------------------------------------------------

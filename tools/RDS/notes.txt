@@ -1,0 +1,1 @@
+allow remote desktop connection --> System --> Advanced system settings --> Remote --> Allow connection from computers..etc
